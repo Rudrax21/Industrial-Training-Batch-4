@@ -1,0 +1,27 @@
+// Program to count the number of digits in a number
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num, count = 0;
+    cout << "Enter an integer: ";
+    cin >> num;
+
+    if (num == 0)
+    {
+        count = 1;
+    }
+    else
+    {
+        while (num != 0)
+        {
+            num /= 10;
+            count++;
+        }
+    }
+
+    cout << "Number of digits: " << count << endl;
+
+    return 0;
+}
